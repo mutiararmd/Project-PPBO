@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="844c6043-83dd-4be6-869e-b40546ce97b2">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="kode" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[select * from pemeriksaan]]>
+	</queryString>
+	<field name="Kode_Pemeriksaan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Kode_Dokter" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_Dokter" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Kode_Pasien" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_Pasien" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Diagnosa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tanggal_Pemeriksaan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="124" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="9f0696a2-e7c5-47b3-8a38-158a3811067a" x="169" y="0" width="206" height="37"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KLINIK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2baac25f-09fb-4d5f-ad90-9a8892fac369" x="169" y="37" width="206" height="42"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ONE DAY CARE]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="43" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="43730077-f92e-4a89-9b3a-07265fb0baa1" x="0" y="0" width="100" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="b5df5c03-b746-41c1-b063-e571ba7e2108" x="0" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Kode_Pemeriksaan]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="df2b2b6a-b2ff-43b7-ad6d-6c9613db3d0c" x="100" y="0" width="100" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="6fa9c58e-5ec6-44de-9c80-0c91602120d7" x="100" y="0" width="81" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama_Dokter]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="df2b2b6a-b2ff-43b7-ad6d-6c9613db3d0c" x="200" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="df2b2b6a-b2ff-43b7-ad6d-6c9613db3d0c" x="300" y="0" width="142" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="df2b2b6a-b2ff-43b7-ad6d-6c9613db3d0c" x="442" y="0" width="113" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="b5df5c03-b746-41c1-b063-e571ba7e2108" x="442" y="0" width="113" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tanggal_Pemeriksaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="70771229-ee7b-41aa-a177-f8d64da5c055" x="200" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama_Pasien]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="09d60035-25ed-4b04-83ed-6395816150c7" x="300" y="0" width="142" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Diagnosa]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="df2b2b6a-b2ff-43b7-ad6d-6c9613db3d0c" x="0" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="df2b2b6a-b2ff-43b7-ad6d-6c9613db3d0c" x="100" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="df2b2b6a-b2ff-43b7-ad6d-6c9613db3d0c" x="300" y="0" width="142" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="df2b2b6a-b2ff-43b7-ad6d-6c9613db3d0c" x="200" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="df2b2b6a-b2ff-43b7-ad6d-6c9613db3d0c" x="442" y="0" width="112" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="87815e99-d6d4-4c75-ba2f-1a5084bdec87" x="100" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Nama_Dokter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0b9dfcc4-cfc0-4b03-afca-4d1560999391" x="300" y="0" width="142" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Diagnosa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="45b21fde-38d2-440a-a10b-16a94bc92ba5" x="200" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Nama_Pasien}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="492697b5-36ec-4518-8e31-d84413ac20f1" x="442" y="0" width="113" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Tanggal_Pemeriksaan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3a0abc8a-d6fb-47c4-b3e0-d389b95a7d7b" x="0" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Kode_Pemeriksaan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="40" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
